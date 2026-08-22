@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --navy-950: #061121;
+    --navy-900: #0b192e;
+    --navy-800: #122543;
+    --navy-700: #1c355e;
+    --navy-600: #2a4c80;
+    --navy-100: #e2e8f0;
+    --navy-50: #f8fafc;
+    
+    --gov-blue: #1d4ed8;
+    --gov-light-blue: #38bdf8;
+    --env-green: #059669;
+    --env-green-light: #10b981;
+    --warn-amber: #d97706;
+    --crit-red: #dc2626;
+  }
+
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Institutional Clean Utilities */
+.gov-gradient-navy {
+  background: linear-gradient(135deg, #0b192e 0%, #122543 50%, #0d2137 100%);
+}
+
+.gov-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+}
+
+.gov-card-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gov-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
+  border-color: #cbd5e1;
+}
+
+.gov-header-border {
+  border-bottom: 2px solid #1d4ed8;
+}
+
+/* Clean Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Subtle Animated Grid for Institutional Hero */
+.gov-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+.gov-light-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+}
+
+/* Keyframe Animations */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
