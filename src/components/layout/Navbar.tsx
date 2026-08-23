@@ -276,6 +276,17 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenOnboarding }) => {
             )}
           </div>
 
+          {/* Super Admin Badge (thakrethe@gmail.com) */}
+          <div className="hidden lg:flex items-center space-x-2 px-2.5 py-1 bg-emerald-950/70 border border-emerald-700/60 rounded-md text-xs">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <div className="text-left">
+              <div className="flex items-center space-x-1">
+                <span className="font-bold text-emerald-300 text-[11px]">ADMIN</span>
+                <span className="text-[10px] text-emerald-400/90 font-mono">thakrethe@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
           {/* Notifications Popover */}
           <div className="relative">
             <button

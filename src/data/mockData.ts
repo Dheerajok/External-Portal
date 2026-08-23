@@ -76,13 +76,13 @@ export const INITIAL_ORGANIZATIONS: Organization[] = [
     city: 'New Delhi',
     address: 'Parivesh Bhawan, CBD-cum-Office Complex, East Arjun Nagar, Delhi - 110032',
     website: 'https://cpcb.nic.in',
-    officialEmail: 'authority@cpcb.gov.in',
+    officialEmail: 'thakrethe@gmail.com',
     contactNumber: '+91 11 4310 2030',
     representative: {
-      name: 'Sunita Verma, IFS',
-      designation: 'Director of Environmental Surveillance',
-      email: 'sverma@cpcb.gov.in',
-      contact: '+91 11 4310 2035'
+      name: 'Thakre (Apex Super Admin)',
+      designation: 'Chief Environmental Commissioner & Super Admin',
+      email: 'thakrethe@gmail.com',
+      contact: '+91 98260 00001'
     },
     operationalAreas: {
       states: ['All India', 'Madhya Pradesh', 'Maharashtra', 'Delhi-NCR', 'Karnataka'],
